@@ -7,19 +7,19 @@ angular.module('auth1App', [
 .config( function($routeProvider) {
 	$routeProvider
 		.when('/', {
-			templateUrl: 'views/home.html',
+			templateUrl: 'app/views/home.html',
 			controller: 'HomeCtrl'
 		})
 		.when('/login', {
-			templateUrl: 'views/login.html',
+			templateUrl: 'app/views/login.html',
 			controller: 'LoginCtrl'
 		})
 		.when('/signup', {
-			template: 'views/signup.html',
+			template: 'app/views/signup.html',
 			controller: 'SignupCtrl'
 		})
 		.when('/photo/:id', {
-			template: 'views/detail.html',
+			template: 'app/views/detail.html',
 			controller: 'DetailCtrl'
 		})
 		.otherwise('/');
