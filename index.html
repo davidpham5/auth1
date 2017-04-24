@@ -23,14 +23,21 @@
 		</div>
 		<div class="container">
 			<h1>{{app.hi}}</h1>
+
+			<div ng-view=""></div>
 		</div>
 
 		<script src="bower_components/angular/angular.js"></script>
 		<script src="bower_components/angular-route/angular-route.js"></script>
 		<script src="bower_components/angular-messages/angular-messages.js"></script>
+		<script src="bower_components/satellizer/dist/satellizer.min.js"></script>
+
 		<script src="app/app.js"></script>
 		<script src="app/app-controller.js"></script>
-
+		<script src="app/scripts/controllers/main.controller.js"></script>
 		<script src="app/scripts/components/main/main.component.js"></script>
+
+		<script src="app/scripts/controllers/login.controller.js"></script>
+		<script src="app/scripts/controllers/detail.controller.js"></script>
 	</body>
 </html>
